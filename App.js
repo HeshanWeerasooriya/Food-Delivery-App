@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { View, Text, Image, StatusBar } from "react-native";
 import AppIntroSlider from "react-native-app-intro-slider";
 import { COLORS, SIZES } from './constants/theme';
+import Router from './router/router';
 
 
 const slides = [
@@ -97,13 +98,6 @@ export default function App() {
   }
 
   return(
-    <View style={{
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-    }}
-    >
-      <Text>Home Screen</Text>
-    </View>
+   <Router/>
   )
 }
